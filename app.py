@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for, session
 import random
 
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static', template_folder='templates')
 
 app.secret_key = "imposter_secret_key"
 
